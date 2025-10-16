@@ -7,8 +7,9 @@ import {
     IconHome,
     IconNewSection,
     IconTerminal2,
+    IconBrandLinkedin,
 } from "@tabler/icons-react";
-
+// import { TbBrandLinkedinFilled } from "react-icons/tb";
 export function FloatingDockDemo() {
     const links = [
         {
@@ -37,7 +38,7 @@ export function FloatingDockDemo() {
             title: "Aceternity UI",
             icon: (
                 <img
-                    src="https://assets.aceternity.com/logo-dark.png"
+                    src="https://niterg-astro.github.io/Astrology/Assets/SVG/Ganesha.svg"
                     width={20}
                     height={20}
                     alt="Aceternity Logo" />
@@ -51,7 +52,20 @@ export function FloatingDockDemo() {
             ),
             href: "#",
         },
-
+        {
+            title: "LinkedIn",
+            icon: (
+                <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            ),
+            href: "#",
+        },
+        // {
+        //     title: "LinkedIn",
+        //     icon: (
+        //         <TbBrandLinkedinFilled className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        //     ),
+        //     href: "#",
+        // },
         {
             title: "Twitter",
             icon: (
