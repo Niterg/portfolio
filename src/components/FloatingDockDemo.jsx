@@ -1,5 +1,6 @@
 import React from "react";
 import { FloatingDock } from "./ui/floating-dock";
+
 import {
     IconBrandGithub,
     IconBrandX,
@@ -15,22 +16,22 @@ export function FloatingDockDemo() {
         {
             title: "Home",
             icon: (
-                <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconHome className="h-full w-full text-dark-500 dark:text-dark-300" />
             ),
             href: "#",
         },
 
         {
-            title: "Products",
+            title: "Projects",
             icon: (
-                <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconTerminal2 className="h-full w-full text-dark-500 dark:text-dark-300" />
             ),
             href: "#",
         },
         {
             title: "Components",
             icon: (
-                <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconNewSection className="h-full w-full text-dark-500 dark:text-dark-300" />
             ),
             href: "#",
         },
@@ -48,14 +49,14 @@ export function FloatingDockDemo() {
         {
             title: "Changelog",
             icon: (
-                <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconExchange className="h-full w-full text-dark-500 dark:text-dark-300" />
             ),
             href: "#",
         },
         {
             title: "LinkedIn",
             icon: (
-                <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconBrandLinkedin className="h-full w-full text-dark-500 dark:text-dark-300" />
             ),
             href: "#",
         },
@@ -69,20 +70,20 @@ export function FloatingDockDemo() {
         {
             title: "Twitter",
             icon: (
-                <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconBrandX className="h-full w-full text-dark-500 dark:text-dark-300" />
             ),
             href: "#",
         },
         {
             title: "GitHub",
             icon: (
-                <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconBrandGithub className="h-full w-full text-dark-500 dark:text-dark-300" />
             ),
             href: "#",
         },
     ];
     return (
-        <div className="flex items-center justify-center h-[35rem] w-full">
+        <div className="flex items-center justify-center h-[10rem] w-full relative">
             <FloatingDock
                 // only for demo, remove for production
                 mobileClassName="translate-y-20"

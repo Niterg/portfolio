@@ -12,7 +12,7 @@ const GlowingEffect = memo(({
     glow = false,
     className,
     movementDuration = 2,
-    borderWidth = 1,
+    borderWidth = 1.7,
     disabled = true
 }) => {
     const containerRef = useRef(null);
@@ -116,7 +116,6 @@ const GlowingEffect = memo(({
                         "--active": "0",
                         "--glowingeffect-border-width": `${borderWidth}px`,
                         "--repeating-conic-gradient-times": "5",
-
                         "--gradient":
                             variant === "white"
                                 ? `repeating-conic-gradient(

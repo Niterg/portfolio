@@ -1,8 +1,15 @@
 import { CardSpotlight } from "../components/ui/card-spotlight";
+import { GlowingEffect } from "./ui/glowing-effect";
 
 export function CardSpotlightDemo() {
     return (
-        <CardSpotlight className="h-96 w-96">
+        <CardSpotlight className="h-96 w-96 dark:shadow-[0px_0px_27px_0px_#2D2D2D]">
+            <GlowingEffect
+                spread={50}
+                glow={true}
+                disabled={false}
+                proximity={64}
+                inactiveZone={0.1} />
             <p className="text-xl font-bold relative z-20 mt-2 text-white">
                 Authentication steps
             </p>
