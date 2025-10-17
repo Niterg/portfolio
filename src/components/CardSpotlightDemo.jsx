@@ -3,17 +3,17 @@ import { GlowingEffect } from "./ui/glowing-effect";
 
 export function CardSpotlightDemo() {
     return (
-        <CardSpotlight className="h-96 w-96 dark:shadow-[0px_0px_27px_0px_#2D2D2D]">
+        <CardSpotlight className="h-full w-full dark:shadow-[0px_0px_27px_0px_#2D2D2D]">
             <GlowingEffect
                 spread={50}
                 glow={true}
                 disabled={false}
                 proximity={64}
                 inactiveZone={0.1} />
-            <p className="text-xl font-bold relative z-20 mt-2 text-white">
-                Authentication steps
+            <p className="text-2xl font-semibold relative z-20 mt-2 text-white">
+                Professional Summary
             </p>
-            <div className="text-neutral-200 mt-4 relative z-20">
+            {/* <div className="text-neutral-200 mt-4 relative z-20">
                 Follow these steps to secure your account:
                 <ul className="list-none  mt-2">
                     <Step title="Enter your email address" />
@@ -21,10 +21,9 @@ export function CardSpotlightDemo() {
                     <Step title="Set up two-factor authentication" />
                     <Step title="Verify your identity" />
                 </ul>
-            </div>
-            <p className="text-neutral-300 mt-4 relative z-20 text-sm">
-                Ensuring your account is properly secured helps protect your personal
-                information and data.
+            </div> */}
+            <p className="text-neutral-300 mt-4 text-xl relative z-20 text-sm">
+                Cloud-focused DevOps Engineer skilled in AWS, Kubernetes, Terraform, Docker, Virtualization, and CI/CD automation. Experienced in containerization and software development, building and deploying scalable infrastructure across AWS and Hetzner Cloud. Proficient in Infrastructure-as-Code, automation pipelines, and container orchestration. Collaboration experience with U.S. and global teams using Jira, Slack, and GitHub to resolve issues and deliver reliable solutions. Remote-ready professional with a focus on measurable impact and efficiency.
             </p>
         </CardSpotlight>
     );

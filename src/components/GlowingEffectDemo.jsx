@@ -10,31 +10,31 @@ export function GlowingEffectDemo() {
 
             <GridItem
                 area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5] "
-                icon={<Cloudy className="h-6 w-6 text-black dark:text-neutral-100 " />}
+                icon={<Cloudy className="h-6 w-6 text-neutral-100 dark:text-neutral-100 " />}
                 title="Side Quest"
                 work="DevOps Intern"
                 description="Kubernetes on Hetzner" />
             <GridItem
                 area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
-                icon={<School className="h-6 w-6 text-black dark:text-neutral-100 " />}
+                icon={<School className="h-6 w-6 text-neutral-100 dark:text-neutral-100 " />}
                 title="DeerWalk Training Center"
                 work="DevOps Traineeship on AWS"
                 description="AWS" />
             <GridItem
                 area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
-                icon={<Telescope className="h-6 w-6 text-black dark:text-neutral-100 " />}
+                icon={<Telescope className="h-6 w-6 text-neutral-100 dark:text-neutral-100 " />}
                 title="Nepal Telecom"
                 work="Full Stack Developer [Django]"
                 description="Geographical Tower Selection & RBAC System" />
             <GridItem
                 area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]"
-                icon={<Sparkles className="h-6 w-6 text-black dark:text-neutral-100 " />}
+                icon={<Sparkles className="h-6 w-6 text-neutral-100 dark:text-neutral-100 " />}
                 title="Relevant Projects"
                 work="Kubernetes, AWS, React Portfolio"
                 description="Projects" />
             <GridItem
                 area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
-                icon={<Search className="h-6 w-6 text-black dark:text-neutral-100 " />}
+                icon={<Search className="h-6 w-6 text-neutral-100 dark:text-neutral-100 " />}
                 title="Let's Work Together"
                 work="Open to Opportunities"
                 description="I'm probably writing code as you browse this " />
@@ -78,14 +78,14 @@ const GridItem = ({
                                 </div>
                                 {/* Text appears on hover */}
                                 <h3
-                                    className="opacity-0 translate-x-[-1rem] ml-2 -tracking-4 font-sans text-2xl/[1.375rem] text-balance text-black md:text-3xl/[1.875rem] transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-0 dark:text-neutral-400"
+                                    className="opacity-0 translate-x-[-1rem] ml-2 -tracking-4 font-sans text-2xl/[1.375rem] text-balance text-neutral-400 md:text-3xl/[1.875rem] transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-0 dark:text-neutral-400"
                                 >
                                     {description}
                                 </h3>
                             </div>
                             <div className="space-y-3">
                                 <h3
-                                    className="-tracking-4 pt-0.5 font-sans sm:text-2xl/[1.375rem] text-balance text-black md:text-5xl/[2.875rem] text-4xl dark:text-white">
+                                    className="-tracking-4 pt-0.5 font-sans sm:text-2xl/[1.375rem] text-balance text-white md:text-5xl/[2.875rem] text-4xl dark:text-white">
                                     {title}
                                 </h3>
 
@@ -97,7 +97,7 @@ const GridItem = ({
                                         className="w-6 h-6 opacity-0 -translate-x-3 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 filter brightness-0 invert"
                                     />
                                     <h3
-                                        className="-tracking-4 pt-0.5 font-sans lg:text-3xl/[1.375rem] text-balance text-black md:text-3xl/[1.875rem] text-2xl ml-1 transition-all duration-300 group-hover:translate-x-2 -translate-x-6 dark:text-orange-400">
+                                        className="-tracking-4 pt-0.5 font-sans lg:text-3xl/[1.375rem] text-balance text-orange-400 md:text-3xl/[1.875rem] text-2xl ml-1 transition-all duration-300 group-hover:translate-x-2 -translate-x-6 dark:text-orange-400">
                                         {work}
                                     </h3>
                                 </div>
