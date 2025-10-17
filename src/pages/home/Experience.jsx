@@ -3,11 +3,11 @@ import SVGAnimator from '../../components/SvgReveal'
 
 const Experience = () => {
     return (
-        <div class="relative contain fluid sticky p-9 bg-black lg:h-[200vh]">
-            <div className="lg:flex md:flex">
-                <span class="lg:h-px w-full text-white lg:text-9xl md:text-8xl text-6xl lg:p-5 md:p-5 lg:pl-9 ">Experience</span>
+        <div class="relative contain fluid sticky p-9 bg-black 2xl:h-[200vh] xl:h-[200vh]">
+            <div className="2xl:flex md:flex">
+                <span class="2xl:h-px w-full text-white 2xl:text-9xl lg:text-8xl md:text-8xl text-6xl 2xl:p-5 md:p-5 2xl:pl-9 lg:pl-9 ">Experience</span>
                 <div className=" top-[-20vh] flex items-center justify-center">
-                    <div className="lg:w-100 lg:h-50  flex  text-orange-400">
+                    <div className="2xl:w-100 2xl:h-50  flex  text-orange-400">
                         <SVGAnimator
                             svgPath="/svg/stupa.svg"
                             strokeColor="#2563eb"
@@ -16,8 +16,8 @@ const Experience = () => {
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col items-center justify-center gap-10 lg:px-10 md:p-10 p-0">
-                <div class="flex flex-col items-center justify-center gap-10 mt-9 lg:px-10 md:p-0 ">
+            <div class="flex flex-col items-center justify-center gap-10 2xl:px-10 md:p-10 p-0">
+                <div class="flex flex-col items-center justify-center gap-10 mt-9 2xl:px-10 md:p-0 ">
                     {/* <CardSpotlightDemo /> */}
                     {/* <Scroll /> */}
                     <GlowingEffectDemo />

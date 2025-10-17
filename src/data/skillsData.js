@@ -9,7 +9,7 @@ export const skillsData = [
     },
     {
         name: "CI/CD & Automation:",
-        description: "SonarQube, Trivy, OWASP"
+        description: "Jenkins, GitHub Actions, GitLab CI, Shell/Bash, ArgoCD"
     },
     {
         name: "Infrastructure & OS:",
