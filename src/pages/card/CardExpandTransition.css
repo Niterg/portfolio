@@ -1,0 +1,97 @@
+.card-expand-container {
+  display: inline-block;
+}
+
+.card-expand-card {
+  cursor: pointer;
+  transition: all var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-expand-card.card-expanding {
+  position: fixed;
+  z-index: 1001;
+  transform-origin: var(--click-x) var(--click-y);
+  animation: expandCard var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes expandCard {
+  0% {
+    width: var(--start-width);
+    height: var(--start-height);
+    border-radius: inherit;
+    transform: scale(1);
+  }
+  100% {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    transform: scale(1);
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+.card-expand-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  animation: fadeIn var(--transition-duration) ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.card-expand-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: white;
+  animation: contentFadeIn var(--transition-duration) ease-out;
+  overflow: auto;
+}
+
+@keyframes contentFadeIn {
+  from { 
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to { 
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.card-expand-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1002;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.card-expand-close-btn:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Prevent scroll on body when expanded */
+body.no-scroll {
+  overflow: hidden;
+}
