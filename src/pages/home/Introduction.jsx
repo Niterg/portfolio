@@ -1,11 +1,11 @@
 const Introduction = () => {
     return (
-        <div class="relative sticky h-screen bg-gradient-to-b from-orange-400 to-neutral-900 animate-fadeIn">
+        <div class="relative sticky h-screen bg-gradient-to-b from-orange-500 to-neutral-900 animate-fadeIn">
             <div class="flex flex-col  items-center justify-center gap-10 p-10">
-                <div class="flex flex-col items-center justify-center gap-3 lg:mt-9  ">
+                <div class="flex flex-col items-center justify-center gap-3 2xl:mt-9  ">
                     <h1 class="text-white lg:text-9xl text-8xl">Parag Niraula</h1>
-                    <h4 class="text-black text-center lg:text-4xl sm:mt-2 text-3xl">DevOps Engineer</h4>
-                    <h4 class="text-white lg:text-4xl text-2xl items-center justify-center text-center">  AWS / Kubernetes / Terraform </h4>
+                    <h4 class="text-neutral-800 text-center lg:text-5xl  font-semibold sm:mt-2 text-3xl">DevOps Engineer</h4>
+                    <h4 class="text-white lg:text-3xl text-2xl items-center justify-center text-center">  AWS / Kubernetes / Terraform </h4>
                     <h4 class="text-white lg:text-4xl text-2xl">  Open to Remote</h4>
                 </div>
 

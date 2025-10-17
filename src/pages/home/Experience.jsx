@@ -5,7 +5,7 @@ const Experience = () => {
     return (
         <div class="relative contain fluid sticky p-9 bg-black 2xl:h-[200vh] xl:h-[200vh]">
             <div className="2xl:flex md:flex">
-                <span class="2xl:h-px w-full text-white 2xl:text-9xl lg:text-8xl md:text-8xl text-6xl 2xl:p-5 md:p-5 2xl:pl-9 lg:pl-9 ">Experience</span>
+                <span class="2xl:h-px w-full text-white 2xl:text-9xl lg:text-8xl md:text-8xl text-6xl 2xl:p-5 md:p-5 2xl:pl-9 lg:pl-9 ">Experiences</span>
                 <div className=" top-[-20vh] flex items-center justify-center">
                     <div className="2xl:w-100 2xl:h-50  flex  text-orange-400">
                         <SVGAnimator

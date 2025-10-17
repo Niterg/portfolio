@@ -3,7 +3,7 @@ import { skillsData } from '../../data/skillsData';
 
 const TechnicalSkills = () => {
     return (
-        <div class="relative 2xl:top-[20vh] lg:top-[-20vh] lg:h-[200vh] h-full bg-white">
+        <div class="relative 2xl:top-0 lg:top-[-20vh] lg:h-[200vh] h-full bg-white">
             <div class=" items-center justify-center gap-10 p-10 ">
                 <div className="lg:flex">
                     <h1 class="lg:h-px w-full text-black 2xl:text-9xl 2xl:text-7xl lg:text-7xl md:text-7xl text-6xl lg:px-5 lg:pl-9 ">Technical Skills</h1>

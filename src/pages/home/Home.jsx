@@ -18,7 +18,7 @@ export default function Home() {
                 <Introduction />
 
             </div>
-            <div className="sticky 2xl:top-[28vh] xl:top-[45vh] top-[45vh] lg:h-[120vh]">
+            <div className="sticky 2xl:top-[40vh] xl:top-[45vh] top-[45vh] lg:h-[120vh]">
                 {/* Using with external SVG file */}
                 <SVGScrollAnimator
                     svgPath="/svg/Ganesha.svg"
@@ -28,7 +28,7 @@ export default function Home() {
 
                 {/* Or using with inline SVG component */}
             </div>
-            <div className="lg:sticky top-0 relative h-[200vh]">
+            <div className="lg:sticky top-0 relative h-[50vh]">
                 {/* <SVGScrollAnimator /> */}
             </div>
             <div className="lg:sticky lg:top-[-30vh] 2xl:top-0 relative lg:h-[100vh] h-full ">
@@ -38,7 +38,7 @@ export default function Home() {
                 {/* <SVGScrollAnimator /> */}
             </div>
 
-            <div className="lg:sticky 2xl:top-[0vh] lg:top-0 relative lg:h-[100vh] 2xl:h-[150vh] md:h-full h-full">
+            <div className="lg:sticky 2xl:top-[0vh] lg:top-0 relative lg:h-[100vh] 2xl:h-[100vh] md:h-full h-full">
                 <TechnicalSkills />
             </div>
 
@@ -58,7 +58,7 @@ export default function Home() {
                 {/* <Experience /> */}
             </div>
 
-            <div className="lg:sticky top-0 relative lg:h-[200vh]">
+            <div className="lg:sticky top-0 relative lg:h-[150vh]">
                 {/* <SVGScrollAnimator /> */}
             </div>
             {/* <div class="relative bg-black top-[-20vh] h-[10vh] sticky flex flex-col items-center justify-center gap-2 p-4">
