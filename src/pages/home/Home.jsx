@@ -1,26 +1,42 @@
 import { FloatingDockDemo } from '../../components/FloatingDockDemo'
 import { CardSpotlightDemo } from '../../components/CardSpotlightDemo'
 import { GlowingEffectDemo } from '../../components/GlowingEffectDemo'
-// import { SVGBackground } from '../About/About'
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+// import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import '../../index.css'
 import { TextHoverEffectDemo } from '../../components/TextHoverEffect'
-import ArrowRight from "../../assets/arrow-right.svg";
-
+import SVGScrollAnimator from '../../components/ScrollSvgReveal'
+import SVGAnimator from '../../components/SvgReveal'
+// import SVGFillLoader from '../../components/SVGFill'
 
 export default function Home() {
     return (
         <main className="">
-            <div className="sticky relative top-0 h-[200vh] w-6/6 ">
+            <div className="sticky relative top-0 lg:h-[100vh] w-6/6 ">
                 {/* <TextHoverEffectDemo /> */}
                 <Introduction />
 
             </div>
-            <div className="sticky top-0 relative h-[100vh] ">
+            <div className="sticky top-[25vh] lg:h-[120vh]">
+                {/* Using with external SVG file */}
+                <SVGScrollAnimator
+                    svgPath="/svg/Ganesha.svg"
+                    strokeColor="#3b82f6"
+                    className="h-[800px] text-orange-400 mx-auto"
+                />
+
+                {/* Or using with inline SVG component */}
+
+            </div>
+
+            <div className="lg:sticky top-0 relative lg:h-[100vh] ">
                 <Experience />
             </div>
-            <div className="sticky top-0 relative h-[100vh] ">
+            <div className="lg:sticky top-0 relative lg:h-[100vh] ">
                 <Section4 />
+            </div>
+
+            <div className="lg:sticky top-0 relative lg:h-[200vh]">
+                {/* <SVGScrollAnimator /> */}
             </div>
 
             <div className="sticky relative h-[100vh] ">
@@ -41,10 +57,12 @@ export default function Home() {
 const Introduction = () => {
     return (
         <div class="relative sticky h-screen bg-orange-400">
-            <div class="flex flex-col  items-center justify-center gap-10 p-10 ">
-                <div class="flex flex-col items-center lg:justify-center gap-10 mt-9 p-10 ">
+            <div class="flex flex-col  items-center justify-center gap-10 p-10">
+                <div class="flex flex-col items-center justify-center gap-3 lg:mt-9  ">
                     <h1 class="text-white lg:text-9xl text-7xl">Parag Niraula</h1>
-                    <h4 class="text-white lg:text-4xl text-3xl">DevOps Engineer (AWS / Kubernetes / Terraform) | Open to Remote</h4>
+                    <h4 class="text-black text-center lg:text-4xl sm:mt-2 text-3xl">DevOps Engineer</h4>
+                    <h4 class="text-white lg:text-4xl text-2xl items-center justify-center text-center">  AWS / Kubernetes / Terraform </h4>
+                    <h4 class="text-white lg:text-4xl text-2xl">  Open to Remote</h4>
                 </div>
 
             </div>
@@ -54,9 +72,20 @@ const Introduction = () => {
 
 const Experience = () => {
     return (
-        <div class="relative sticky p-9 bg-black h-[200vh]">
-            <span class="h-px w-full text-white lg:text-9xl text-7xl p-5 pl-9 ">Experience</span>
-            <div class="flex flex-col items-center justify-center gap-10 mt-9 lg:p-10 md:p-0 ">
+        <div class="relative sticky p-9 bg-black lg:h-[200vh]">
+            <div className="lg:flex">
+                <span class="lg:h-px w-full text-white lg:text-9xl text-6xl lg:p-5 lg:pl-9 ">Experience</span>
+                <div className=" top-[-20vh] flex">
+                    <div className="w-100 h-50 flex  text-orange-400">
+                        <SVGAnimator
+                            svgPath="/svg/stupa.svg"
+                            strokeColor="#2563eb"
+                            className="w-full h-full max-w-4xl text-orange-400"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-10 lg:p-10 md:p-0 ">
                 <div class="flex flex-col items-center justify-center gap-10 mt-9 lg:p-10 md:p-0 ">
                     {/* <CardSpotlightDemo /> */}
                     {/* <Scroll /> */}
@@ -79,15 +108,35 @@ const Experience = () => {
 }
 const Section4 = () => {
     return (
-        <div class="relative top-[20vh] h-[100vh] bg-white">
+        <div class="relative lg:top-[20vh] h-[100vh] bg-white">
             <div class=" items-center justify-center gap-10 p-10 ">
-                <h1 class="text-black text-9xl">Technical Skills</h1><br />
-                <div class="flex flex-col items-center justify-center gap-10 mt-9 lg:p-10 md:p-0">
-                    <h4 class="text-black text-3xl mb-4">Feel free to reach out for collaborations or opportunities</h4>
-                    {/* <CardSpotlightDemo /> */}
+                <div className="lg:flex">
+                    <h1 class="lg:h-px w-full text-black lg:text-9xl text-6xl lg:p-5 lg:pl-9 ">Technical Skills</h1>
+                    {/* <div className=" top-[-20vh] flex">
+                        <div className="w-100 h-50 flex  text-orange-400">
+                            <SVGAnimator
+                                svgPath="/svg/gajur.svg"
+                                strokeColor="#2563eb"
+                                className="w-full h-full max-w-4xl text-orange-400"
+                            />
+                        </div>
+                    </div> */}
+                    <div className={`flex items-center justify-center`}>
+                        <img
+                            src="svg/gajur-fill.svg"
+                            alt="SVG"
+                            className="w-50 h-50 object-contain transition-transform duration-300 hover:scale-110 hover:rotate-3"
+                        />
+                    </div>
                 </div>
             </div>
+            <br />
+            <div class="flex flex-col items-center justify-center gap-10 lg:mt-9 p-10 md:p-0">
+                <h4 class="text-black text-3xl mb-4">Feel free to reach out for collaborations or opportunities</h4>
+                {/* <CardSpotlightDemo /> */}
+            </div>
         </div>
+
     );
 }
 const Section2 = () => {
@@ -99,6 +148,7 @@ const Section2 = () => {
                     <h4 class="text-white text-3xl mb-4">Feel free to reach out for collaborations or opportunities</h4>
                     {/* <CardSpotlightDemo /> */}
                 </div>
+
             </div>
         </div>
     );
@@ -120,6 +170,7 @@ const Section3 = () => {
                     </div>
 
                     <h4 class="text-black items-center justify-center text-3xl mt-9">Feel free to reach out for collaborations or opportunities</h4>
+
                     {/* <SVGBackground /> */}
 
                     {/* <WaveBackground /> */}

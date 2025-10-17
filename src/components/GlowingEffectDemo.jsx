@@ -1,7 +1,7 @@
 import { Telescope, Search, Sparkles, Terminal, Cloudy, School } from "lucide-react";
 import { GlowingEffect } from "./ui/glowing-effect";
 import { CardSpotlight } from "../components/ui/card-spotlight";
-import ArrowRight from "../assets/arrow-right.svg";
+import ArrowRight from "../assets/svg/arrow-right.svg";
 
 export function GlowingEffectDemo() {
     return (
@@ -85,7 +85,7 @@ const GridItem = ({
                             </div>
                             <div className="space-y-3">
                                 <h3
-                                    className="-tracking-4 pt-0.5 font-sans text-xl/[1.375rem] text-balance text-black md:text-5xl/[2.875rem] dark:text-white">
+                                    className="-tracking-4 pt-0.5 font-sans sm:text-2xl/[1.375rem] text-balance text-black md:text-5xl/[2.875rem] text-4xl dark:text-white">
                                     {title}
                                 </h3>
 
@@ -97,7 +97,7 @@ const GridItem = ({
                                         className="w-6 h-6 opacity-0 -translate-x-3 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 filter brightness-0 invert"
                                     />
                                     <h3
-                                        className="-tracking-4 pt-0.5 font-sans text-xl/[1.375rem] text-balance text-black md:text-3xl/[1.875rem] ml-1 transition-all duration-300 group-hover:translate-x-2 -translate-x-6 dark:text-orange-400">
+                                        className="-tracking-4 pt-0.5 font-sans lg:text-3xl/[1.375rem] text-balance text-black md:text-3xl/[1.875rem] text-2xl ml-1 transition-all duration-300 group-hover:translate-x-2 -translate-x-6 dark:text-orange-400">
                                         {work}
                                     </h3>
                                 </div>
