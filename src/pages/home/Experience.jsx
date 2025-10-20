@@ -21,7 +21,7 @@ const Experience = () => {
                         <section ref={section2Ref} className="h-screen relative w-100  ">
                             <SvgScrollReveal
                                 svgPath={Stupa}
-                                strokeWidth={3}
+                                strokeWidth={6}
                                 gradientId="myGradient"
                                 gradientColors={['orange', '#ec4899', 'aqua', 'white']}
                                 startOffset="50"   // Section top at 20vh
