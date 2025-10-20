@@ -64,12 +64,12 @@ export default function Home() {
 
             </div>
 
-            <div className="lg:sticky relative top-0 lg:h-[100vh] h-[100vh] h-full z-10 ">
-                <div className="lg:flex">
-                    <div className="lg:w-4/6 w-6/6">
+            <div className="lg:sticky relative top-0 lg:h-[100vh] min-h-screen z-10">
+                <div className="lg:flex h-full">
+                    <div className="lg:w-4/6 w-full h-full">
                         <AboutMe />
                     </div>
-                    <div className="bg-black lg:w-2/6 w-6/6 text-white ">
+                    <div className="bg-black lg:w-2/6 w-full text-white">
                         <ContactMe />
                     </div>
                 </div>

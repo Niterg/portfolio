@@ -2,7 +2,7 @@ import ArrowRight from "../../assets/svg/arrow-right.svg";
 
 const ContactMe = () => {
     return (
-        <div class="relative sticky lg:top-[-20vh] h-[100vh] bg-orange-400 text-black">
+        <div class="relative sticky lg:top-[-20vh] h-full bg-orange-400 text-black">
 
             <div class="items-center justify-center gap-10 p-10 ">
                 <div className="inline-flex items-center">

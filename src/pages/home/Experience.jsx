@@ -12,7 +12,7 @@ const Experience = () => {
             <div className="2xl:flex lg:flex">
                 <span class="2xl:h-px w-full text-white 2xl:text-9xl lg:text-8xl md:text-8xl text-6xl 2xl:p-5 md:p-5 2xl:pl-9 lg:pl-9 ">Experiences</span>
                 <div className=" top-[-20vh] flex items-center justify-center">
-                    <div className="2xl:w-100 2xl:h-50 w-100 h-35  flex ">
+                    <div className="2xl:w-100 2xl:h-50 w-100 h-35  flex overflow-hidden  ">
                         {/* <SVGAnimator
                             svgPath="/svg/stupa.svg"
                             strokeColor="#2563eb"
