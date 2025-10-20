@@ -59,6 +59,13 @@ const ContactMe = () => {
 
                 {/* <WaveBackground /> */}
             </div>
+            <div className={`absolute bottom-0 transform  -translate-x-1/2 left-1/2 items-center justify-center overflow-hidden`}>
+                <img
+                    src="svg/gajur-bell.svg"
+                    alt="SVG"
+                    className="w-full h-full flex transition-transform duration-300 hover:scale-120 hover:rotate-1"
+                />
+            </div>
 
         </div >
     );

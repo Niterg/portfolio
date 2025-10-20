@@ -10,31 +10,31 @@ export function GlowingEffectDemo() {
 
             <GridItem
                 area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5] "
-                icon={<Cloudy className="h-6 w-6 text-neutral-100 dark:text-neutral-100 " />}
+                icon={<Cloudy className="h-6 w-6 text-white dark:text-neutral-100 " />}
                 title="Side Quest"
                 work="DevOps Intern"
                 description="Kubernetes on Hetzner" />
             <GridItem
                 area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
-                icon={<School className="h-6 w-6 text-neutral-100 dark:text-neutral-100 " />}
+                icon={<School className="h-6 w-6 text-white dark:text-neutral-100 " />}
                 title="DeerWalk Training Center"
                 work="DevOps Traineeship on AWS"
                 description="AWS" />
             <GridItem
                 area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
-                icon={<Telescope className="h-6 w-6 text-neutral-100 dark:text-neutral-100 " />}
+                icon={<Telescope className="h-6 w-6 text-white dark:text-neutral-100 " />}
                 title="Nepal Telecom"
                 work="Full Stack Developer [Django]"
                 description="Geographical Tower Selection & RBAC System" />
             <GridItem
                 area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]"
-                icon={<Sparkles className="h-6 w-6 text-neutral-100 dark:text-neutral-100 " />}
+                icon={<Sparkles className="h-6 w-6 text-white dark:text-neutral-100 " />}
                 title="Relevant Projects"
                 work="Kubernetes, AWS, React Portfolio"
                 description="Projects" />
             <GridItem
                 area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
-                icon={<Search className="h-6 w-6 text-neutral-100 dark:text-neutral-100 " />}
+                icon={<Search className="h-6 w-6 text-white dark:text-neutral-100 " />}
                 title="Let's Work Together"
                 work="Open to Opportunities"
                 description="I'm probably writing code as you browse this " />
